@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="doc">
+        <df name="html">
+          <df name="search">
+          </df>
+        </df>
+        <df name="latex">
+        </df>
+      </df>
+      <df name="include">
+        <df name="vapor">
+          <df name="exceptions">
+            <in>null_pointer.hpp</in>
+          </df>
+          <in>vpbasictype.hpp</in>
+          <in>vpboolean.hpp</in>
+          <in>vpbyte.hpp</in>
+          <in>vpclasstype.hpp</in>
+          <in>vpdouble.hpp</in>
+          <in>vpfixobject.hpp</in>
+          <in>vpfloat.hpp</in>
+          <in>vpint.hpp</in>
+          <in>vplong.hpp</in>
+          <in>vpobject.hpp</in>
+          <in>vpproperties.hpp</in>
+          <in>vpshort.hpp</in>
+          <in>vpstring.hpp</in>
+          <in>vptype.hpp</in>
+          <in>vpunsignedbyte.hpp</in>
+          <in>vpunsignedint.hpp</in>
+          <in>vpunsignedlong.hpp</in>
+          <in>vpunsignedshort.hpp</in>
+          <in>vpvector.hpp</in>
+          <in>vpvoid.hpp</in>
+        </df>
+      </df>
+      <df name="src">
+        <in>vpboolean.cpp</in>
+        <in>vpbyte.cpp</in>
+        <in>vpdouble.cpp</in>
+        <in>vpfixobject.cpp</in>
+        <in>vpfloat.cpp</in>
+        <in>vpint.cpp</in>
+        <in>vplong.cpp</in>
+        <in>vpobject.cpp</in>
+        <in>vpproperties.cpp</in>
+        <in>vpshort.cpp</in>
+        <in>vpstring.cpp</in>
+        <in>vptype.cpp</in>
+        <in>vpunsignedbyte.cpp</in>
+        <in>vpunsignedint.cpp</in>
+        <in>vpunsignedlong.cpp</in>
+        <in>vpunsignedshort.cpp</in>
+        <in>vpvector.cpp</in>
+        <in>vpvoid.cpp</in>
+      </df>
+      <df name="test">
+        <in>test_main.cpp</in>
+        <in>vpbytetest.cpp</in>
+        <in>vpfixobjecttest.cpp</in>
+        <in>vpinttest.cpp</in>
+        <in>vplongtest.cpp</in>
+        <in>vpobjecttest.cpp</in>
+        <in>vppropertiestest.cpp</in>
+        <in>vpshorttest.cpp</in>
+        <in>vpstringtest.cpp</in>
+        <in>vptypetest.cpp</in>
+        <in>vpunsignedbytetest.cpp</in>
+        <in>vpunsignedinttest.cpp</in>
+        <in>vpunsignedlongtest.cpp</in>
+        <in>vpunsignedshorttest.cpp</in>
+        <in>vpvectortest.cpp</in>
+        <in>vpvoidtest.cpp</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>5</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

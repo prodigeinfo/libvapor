@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <in>vpboolean.cpp</in>
+        <in>vpbyte.cpp</in>
+        <in>vpdouble.cpp</in>
+        <in>vpfixobject.cpp</in>
+        <in>vpfloat.cpp</in>
+        <in>vpint.cpp</in>
+        <in>vplong.cpp</in>
+        <in>vpobject.cpp</in>
+        <in>vpproperties.cpp</in>
+        <in>vpshort.cpp</in>
+        <in>vpstring.cpp</in>
+        <in>vptype.cpp</in>
+        <in>vpunsignedbyte.cpp</in>
+        <in>vpunsignedint.cpp</in>
+        <in>vpunsignedlong.cpp</in>
+        <in>vpunsignedshort.cpp</in>
+        <in>vpvector.cpp</in>
+        <in>vpvoid.cpp</in>
+      </df>
+      <df name="test">
+        <in>test_main.cpp</in>
+        <in>vpbytetest.cpp</in>
+        <in>vpfixobjecttest.cpp</in>
+        <in>vpinttest.cpp</in>
+        <in>vplongtest.cpp</in>
+        <in>vpobjecttest.cpp</in>
+        <in>vppropertiestest.cpp</in>
+        <in>vpshorttest.cpp</in>
+        <in>vpstringtest.cpp</in>
+        <in>vptypetest.cpp</in>
+        <in>vpunsignedbytetest.cpp</in>
+        <in>vpunsignedinttest.cpp</in>
+        <in>vpunsignedlongtest.cpp</in>
+        <in>vpunsignedshorttest.cpp</in>
+        <in>vpvectortest.cpp</in>
+        <in>vpvoidtest.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="src/vpboolean.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpbyte.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpdouble.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpfixobject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpfloat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vplong.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpobject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpproperties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpshort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vptype.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpunsignedbyte.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpunsignedint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpunsignedlong.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpunsignedshort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpvector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpvoid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/test_main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpbytetest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpfixobjecttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpinttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vplongtest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpobjecttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vppropertiestest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpshorttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpstringtest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vptypetest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpunsignedbytetest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpunsignedinttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpunsignedlongtest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpunsignedshorttest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpvectortest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/vpvoidtest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
