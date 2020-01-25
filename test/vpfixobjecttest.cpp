@@ -67,7 +67,7 @@ BOOST_AUTO_TEST_CASE(vpfixobject_properties_restrictions)
 
     expect = 1234567890;
     clientfile1.set_int(CF_AGE, expect);
-    result = clientfile1.read_int(CF_AGE);
+    result = clientfile1.get_int(CF_AGE);
     BOOST_REQUIRE_EQUAL(result, expect);
 }
 
@@ -108,21 +108,21 @@ BOOST_AUTO_TEST_CASE(vpfixobject_deserialize)
     expectvpt = nullptr;
 
     o.deserialize("fixobject;86;object;76;properties;62;string;3;ageint;10;1234567890string;4;namestring;10;1234567890");
-    resultn = o.read_int(CF_AGE);
+    resultn = o.get_int(CF_AGE);
     BOOST_REQUIRE_EQUAL(expectn, resultn);
-    results = o.read_string(CF_NAME);
+    results = o.get_string(CF_NAME);
     BOOST_REQUIRE_EQUAL(expects, results);
 
     clientfile1.deserialize("clientfile;82;fixobject;69;object;59;properties;45;string;3;ageint;10;1234567890string;4;name;0;");
-    resultn = clientfile1.read_int(CF_AGE);
+    resultn = clientfile1.get_int(CF_AGE);
     BOOST_REQUIRE_EQUAL(expectn, resultn);
     resultvpt = clientfile1.get(CF_NAME);
     BOOST_REQUIRE_EQUAL(expectvpt, resultvpt);
 
     clientfile1.deserialize("clientfile;99;fixobject;86;object;76;properties;62;string;3;ageint;10;1234567890string;4;namestring;10;1234567890");
-    resultn = clientfile1.read_int(CF_AGE);
+    resultn = clientfile1.get_int(CF_AGE);
     BOOST_REQUIRE_EQUAL(expectn, resultn);
-    results = clientfile1.read_string(CF_NAME);
+    results = clientfile1.get_string(CF_NAME);
     BOOST_REQUIRE_EQUAL(expects, results);
 }
 

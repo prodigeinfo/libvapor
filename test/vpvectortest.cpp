@@ -75,16 +75,16 @@ BOOST_AUTO_TEST_CASE(vpvector_deserialize)
     BOOST_REQUIRE_EQUAL(2, resultv2->size());
     resultn = vpint::read_int(resultv2->at(0));
     BOOST_REQUIRE_EQUAL(expectn, resultn);
-    results = vpstring::read(resultv2->at(1));;
+    results = vpstring::get(resultv2->at(1));;
     BOOST_REQUIRE_EQUAL(expects, results);
-    results = vpstring::read(resultv1[2]);;
+    results = vpstring::get(resultv1[2]);;
     BOOST_REQUIRE_EQUAL(expects, results);
 
     resultv1.deserialize("vector;33;int;1;3;0;string;10;1234567890;0;");
     BOOST_REQUIRE_EQUAL(3, resultv1.size());
     resultvpt = resultv1[0];
     BOOST_REQUIRE_EQUAL(expectvpt, resultvpt);
-    results = vpstring::read(resultv1[1]);;
+    results = vpstring::get(resultv1[1]);;
     BOOST_REQUIRE_EQUAL(expects, results);
     resultvpt = resultv1[2];
     BOOST_REQUIRE_EQUAL(expectvpt, resultvpt);

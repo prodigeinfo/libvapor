@@ -38,23 +38,21 @@
 namespace vapor
 {
 
-#define VPTYPE_CLASS_TYPE_GET_DECL(b, t) \
+#define VPTYPE_CLASS_TYPE_GET_DECL(c, t) \
 public: \
-    static b& get(vptype *o) throw (std::invalid_argument, null_pointer) \
+    static c& get(vptype *o) throw (std::invalid_argument, null_pointer) \
     { \
         t *to = cast(o); \
-        return static_cast<b&>(*to); \
-    }
-
-#define VPTYPE_CLASS_TYPE_READ_DECL(c, t) \
-    static const c& read(const vptype *o) throw (std::invalid_argument, null_pointer) \
+        return static_cast<c&>(*to); \
+    } \
+    static const c& get(const vptype *o) throw (std::invalid_argument, null_pointer) \
     { \
         const t *to = cast_const(o); \
         return static_cast<const c&>(*to); \
     }
 
-#define VPTYPE_CLASS_TYPE_READ_OTHER_TYPE_DECL(TYPE_NAME, c, t) \
-    static const c& read_##TYPE_NAME(vptype *o) throw (std::invalid_argument, null_pointer) \
+#define VPTYPE_CLASS_TYPE_GET_OTHER_TYPE_DECL(TYPE_NAME, c, t) \
+    static const c& get_##TYPE_NAME(vptype *o) throw (std::invalid_argument, null_pointer) \
     { \
         const t *to = cast_const(o); \
         return static_cast<const c&>(*to); \

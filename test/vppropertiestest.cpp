@@ -49,7 +49,7 @@ BOOST_AUTO_TEST_CASE(vpproperties_deserialize)
     resultn = vpint::read(result.at("age"));
     BOOST_REQUIRE_EQUAL(expectn, resultn);
     expects = "1234567890";
-    results = vpstring::read(result.at("name"));
+    results = vpstring::get(result.at("name"));
     BOOST_REQUIRE_EQUAL(expects, results);
 
     s = "properties;13;string;1;x;0;";

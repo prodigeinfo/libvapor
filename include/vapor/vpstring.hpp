@@ -68,7 +68,6 @@ public:
     }
 
     VPTYPE_CLASS_TYPE_GET_DECL(vpstringbase_t, vpstring)
-    VPTYPE_CLASS_TYPE_READ_DECL(vpstringbase_t, vpstring)
     VPTYPE_CLASS_DECL(string, vpstring)
 };
 

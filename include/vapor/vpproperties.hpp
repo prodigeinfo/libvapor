@@ -68,7 +68,6 @@ public:
     virtual void deserialize(const char *s) throw(std::runtime_error, std::out_of_range, std::invalid_argument);
 
     VPTYPE_CLASS_TYPE_GET_DECL(vppropertiesbase_t, vpproperties)
-    VPTYPE_CLASS_TYPE_READ_DECL(vppropertiesbase_t, vpproperties)
     VPTYPE_CLASS_DECL(properties, vpproperties)
 };
 

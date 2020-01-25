@@ -12,7 +12,7 @@ test::
 	cd test;make
 
 run-test::
-	cd test;runner
+	cd test;export LD_LIBRARY_PATH=../src;runner
 
 depend-src::
 	cd src; make depend

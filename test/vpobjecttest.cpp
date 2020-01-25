@@ -24,13 +24,13 @@ BOOST_AUTO_TEST_CASE(vpobject_properties_get_set)
     // test basic types
     expectn = 1234567890;
     o.set_int("test2", expectn);
-    resultn = o.read_int("test2");
+    resultn = o.get_int("test2");
     BOOST_REQUIRE_EQUAL(expectn, resultn);
 
     // test basic types
     expects = "1234567890";
     o.set_string("test2", expects);
-    results = o.read_string("test2");
+    results = o.get_string("test2");
     BOOST_REQUIRE_EQUAL(expects, results);
 }
 
@@ -53,9 +53,9 @@ BOOST_AUTO_TEST_CASE(vpobject_deserialize)
     string results;
 
     o.deserialize("object;79;properties;65;string;5;test1int;10;1234567890string;5;test2string;10;1234567890");
-    resultn = o.read_int("test1");
+    resultn = o.get_int("test1");
     BOOST_REQUIRE_EQUAL(resultn, 1234567890);
-    results = o.read_string("test2");
+    results = o.get_string("test2");
     BOOST_REQUIRE_EQUAL(results, "1234567890");
 }
 
